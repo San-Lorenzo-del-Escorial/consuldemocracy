@@ -2,3 +2,33 @@
 //
 // You can also create SCSS files in the app/assets/stylesheets/custom/
 // folder and they will be loaded automatically.
+
+.account-menu.menu {
+  li {
+    .button {
+      @include breakpoint(medium) {
+        @include brand-color;
+        background: $black;
+        color: $white;
+      }
+    }
+  }
+}
+
+.top-bar {
+  h1 {
+    flex-grow: 1;
+    line-height: $line-height;
+    margin-bottom: 0;
+
+    a img {
+      height: rem-calc(48);
+      margin: 0;
+      width: auto;
+
+      @include breakpoint(medium up) {
+        height: rem-calc(124);
+      }
+    }
+  }
+}
