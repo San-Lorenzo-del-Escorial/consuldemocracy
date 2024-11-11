@@ -32,3 +32,21 @@
     }
   }
 }
+
+footer {
+  .institutional-logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    img {
+      height: 4rem;
+      width: auto;
+      object-fit: contain;
+    }
+    .prtr {
+      height: 8rem;
+    }
+  }
+}
