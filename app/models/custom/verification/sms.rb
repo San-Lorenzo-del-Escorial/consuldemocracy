@@ -1,5 +1,5 @@
 load Rails.root.join("app", "models", "verification", "sms.rb")
-load Rails.root.join("app", "lib", "custom", "sms_api.rb")
+load Rails.root.join("app", "lib", "custom", "custom_sms_api.rb")
 
 class Verification::Sms
   validate :valid_phone_format
