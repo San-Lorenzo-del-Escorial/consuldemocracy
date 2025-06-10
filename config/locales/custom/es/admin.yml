@@ -1,0 +1,10 @@
+es:
+  admin:
+    users:
+      columns:
+        phone_number: Número de teléfono
+      account:
+        verified_status: Cuenta verificada
+        not_verified_status: Cuenta no verificada
+      actions:
+        download: Descargar selección actual
