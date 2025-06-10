@@ -35,7 +35,7 @@ class User::Exporter
         user.id.to_s,
         user.name,
         user.email,
-        user.phone_number,
+        user.confirmed_phone,
         user.verified_at? ? I18n.t("admin.users.account.verified_status") : I18n.t("admin.users.account.not_verified_status"),
         user.confirmed_at? ? I18n.t("admin.users.account.active_status") : I18n.t("admin.users.account.inactive_status"),
       ]
@@ -46,7 +46,7 @@ class User::Exporter
         id: user.id,
         name: user.name,
         email: user.email,
-        phone_number: user.phone_number,
+        phone_number: user.confirmed_phone,
       }
     end
 end
